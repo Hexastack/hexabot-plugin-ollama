@@ -16,7 +16,7 @@ import {
 } from '@/chat/schemas/types/message';
 import { MessageService } from '@/chat/services/message.service';
 import { ContentService } from '@/cms/services/content.service';
-import OllamaLlmHelper from '@/extensions/helpers/hexabot-helper-ollama/index.helper';
+import OllamaLlmHelper from '@/contrib/extensions/helpers/hexabot-helper-ollama/index.helper';
 import { HelperService } from '@/helper/helper.service';
 import { HelperType } from '@/helper/types';
 import { LoggerService } from '@/logger/logger.service';
