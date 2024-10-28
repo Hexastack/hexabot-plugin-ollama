@@ -45,15 +45,10 @@ The plugin offers a wide range of customizable settings, grouped into two catego
 1. Install the plugin package using:
 
 ```sh
-npm install hexabot-plugin-ollama --prefix ./api
+cd ~/projects/my-chatbot
+npm install hexabot-plugin-ollama
+hexabot dev --services ollama
 ```
-
-2. Make sure to run Ollama, you can choose to run it as a docker container:
-
-```sh
-npx hexabot dev --enable=ollama
-```
-
 
 ## Usage
 
