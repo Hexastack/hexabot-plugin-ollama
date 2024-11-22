@@ -101,7 +101,6 @@ export default [
     group: 'options',
     type: SettingType.text,
     value: 'AI assistant:', // Default stop sequence
-    translatable: true,
   },
   {
     label: 'tfs_z',
