@@ -33,6 +33,7 @@ export default [
     group: 'default',
     type: SettingType.text,
     value: `You are an AI Assistant that works for Hexastack, the IT company behind Hexabot the chatbot builder.`, // Default value for keeping the model in memory
+    translatable: true,
   },
   {
     label: 'instructions',
@@ -45,6 +46,7 @@ export default [
     group: 'default',
     type: SettingType.textarea,
     value: `Something went wrong ... please try again later.`,
+    translatable: true,
   },
   {
     label: 'mirostat',
