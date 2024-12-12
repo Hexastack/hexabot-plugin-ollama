@@ -1,6 +1,6 @@
 {
   "name": "hexabot-plugin-ollama",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "The Ollama Plugin Extension for Hexabot Chatbot / Agent Builder that provides a custom block for Generative AI + RAG",
   "scripts": {
     "release:patch": "npm version patch && git push origin main --tags",
