@@ -6,7 +6,8 @@
     "release": "npm version patch && git push origin --tags && npm publish"
   },
   "dependencies": {
-    "hexabot-helper-ollama": "2.0.0"
+    "release:patch": "npm version patch && git push origin main --tags",
+    "release:minor": "npm version minor && git push origin main --tags"
   },
   "author": "Hexastack",
   "license": "AGPL-3.0-only"
