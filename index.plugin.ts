@@ -48,11 +48,9 @@ export class OllamaPlugin extends BaseBlockPlugin<typeof SETTINGS> {
     const args = this.getArguments(block);
 
     try {
-      if (!context.text) {
-        throw new Error('Context text is required');
-      }
-
-      const ragContent = await this.contentService.textSearch(context.text);
+      const ragContent = context.text
+        ? await this.contentService.textSearch(context.text)
+        : [];
 
       const systemPrompt = [
         `CONTEXT: ${args.context}`,
