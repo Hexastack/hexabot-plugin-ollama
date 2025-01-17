@@ -48,7 +48,9 @@ export class OllamaPlugin extends BaseBlockPlugin<typeof SETTINGS> {
     const args = this.getArguments(block);
 
     try {
-      const ragContent = await this.contentService.textSearch(context.text);
+      const ragContent = context.text
+        ? await this.contentService.textSearch(context.text)
+        : [];
 
       const systemPrompt = [
         `CONTEXT: ${args.context}`,
